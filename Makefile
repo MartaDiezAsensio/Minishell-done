@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: zjamali <zjamali@student.42.fr>            +#+  +:+       +#+         #
+#    By: mdiez-as <mdiez-as@student.42barcelona.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/05/02 16:01:57 by mbari             #+#    #+#              #
-#    Updated: 2022/03/04 08:27:53 by zjamali          ###   ########.fr        #
+#    Updated: 2023/10/26 18:01:14 by mdiez-as         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -24,6 +24,7 @@ EXPA_FOLDER = expansion
 READ_FOLDER = readline
 LIBFT_HEADER = $(SOURCEDIR)/libft/libft.h
 LIBFT_FOLDER = $(SOURCEDIR)/libft
+TEST_FOLDER = ./test
 
 
 # Name of variables
@@ -98,6 +99,9 @@ MAIN_FILE = last_arg.c \
 main.c \
 minishell.c
 
+
+TEST_FILE = lexer-test.c
+
 # Define objects for all sources
 OBJ_EXEC = $(addprefix $(OBJECTSDIR)/$(EXEC_FOLDER)/, $(EXEC_FILES:.c=.o))
 OBJ_LEX = $(addprefix $(OBJECTSDIR)/$(LEX_FOLDER)/, $(LEX_FILES:.c=.o))
@@ -105,6 +109,8 @@ OBJ_EXPA = $(addprefix $(OBJECTSDIR)/$(EXPA_FOLDER)/, $(EXPA_FILES:.c=.o))
 OBJ_PARS = $(addprefix $(OBJECTSDIR)/$(PARS_FOLDER)/, $(PARS_FILES:.c=.o))
 OBJ_READ = $(addprefix $(OBJECTSDIR)/$(READ_FOLDER)/, $(READ_FILES:.c=.o))
 OBJ_MAIN = $(addprefix $(OBJECTSDIR)/, $(MAIN_FILE:.c=.o))
+OBJ_TEST = $(addprefix $(OBJECTSDIR)/$(TEST_FOLDER)/, $(TEST_FILES:.c=.o))
+
 OBJS := $(OBJ_EXEC) $(OBJ_LEX) $(OBJ_EXPA) $(OBJ_PARS) $(OBJ_READ) $(OBJ_MAIN)
 LIBFT_FILE := $(LIBFT_FOLDER)/$(LIBFT_LIB)
 

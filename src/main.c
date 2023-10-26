@@ -6,7 +6,7 @@
 /*   By: mdiez-as <mdiez-as@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/11 15:07:04 by zjamali           #+#    #+#             */
-/*   Updated: 2023/10/26 16:18:57 by mdiez-as         ###   ########.fr       */
+/*   Updated: 2023/10/26 18:05:47 by mdiez-as         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,10 +68,25 @@ t_simple_cmd	*ft_delete_emty_simple_cmds(t_pipe_line **pipe_line)
 	return (head);
 }
 
-int	main(int ac, char **av, char **env)
+// int	main(int ac, char **av, char **env)
+// {
+// 	(void)ac;
+// 	(void)av;
+// 	ft_minishell(env);
+// 	return (0);
+// }
+
+int	main(int argc, char **argv)
 {
-	(void)ac;
-	(void)av;
-	ft_minishell(env);
-	return (0);
+	(void)argc;
+	char	*line;
+	t_token	*res;
+
+	line = argv[1];
+	res = ft_lexer(line);
+	while (res)
+	{
+		printf("%s  -  %d\n", res->value, res->type);
+		res = res->next;
+	}
 }
