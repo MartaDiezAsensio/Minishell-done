@@ -7,7 +7,6 @@ a computer using interactive lines of commands in a language somewhat close
 to english.The objective of this project is to create a simple shell using c.
 <br>
 <br>
-<img src='https://github.com/zjamali/minishell-42cursus/blob/main/src/final_60c4dba80b27fc007b882d1d_636236.gif'/>
 ##  The Project consist of two parts :
 **Parsing**
 
@@ -39,15 +38,6 @@ Make
 ./minishell
 
 ```
-## Contributing 
-
-[Zouhair Jamali](https://github.com/zjamali)
-<br/>
-&emsp;42intra profile : [zjamali](https://profile.intra.42.fr/users/zjamali)
-<br/>
-[Mehdi Bari](https://github.com/barimehdi77)<br/>
-&emsp;42intra profile : [mbari](https://profile.intra.42.fr/users/mbari) <br/>
-<br/>
 ## Resources
 https://cs61.seas.harvard.edu/site/2019/Section7/ <br>
 https://qastack.fr/unix/159513/what-are-the-shells-control-and-redirection-operators <br>
