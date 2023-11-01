@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   minishell.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: zjamali <zjamali@student.42.fr>            +#+  +:+       +#+        */
+/*   By: mdiez-as <mdiez-as@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/16 11:41:25 by zjamali           #+#    #+#             */
-/*   Updated: 2022/03/04 08:28:18 by zjamali          ###   ########.fr       */
+/*   Updated: 2023/11/01 18:54:06 by mdiez-as         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -337,3 +337,6 @@ void			show_prompt(void);
 void			ft_minishell(char **env);
 
 #endif
+
+
+// https://m4nnb3ll.medium.com/minishell-building-a-mini-bash-a-42-project-b55a10598218
